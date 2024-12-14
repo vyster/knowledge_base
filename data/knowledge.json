@@ -1,0 +1,21 @@
+{
+    "commands": [
+        {
+            "name": "Compile VCS",
+            "description": "Command to compile VCS designs.",
+            "command": "vcs -sverilog -debug_all"
+        },
+        {
+            "name": "Run SpyGlass",
+            "description": "Command to analyze with SpyGlass.",
+            "command": "spyglass -project file.prj"
+        }
+    ],
+    "environment_variables": [
+        {
+            "name": "PATH",
+            "description": "Set the PATH variable for product executables.",
+            "value": "/usr/local/synopsys/bin"
+        }
+    ]
+}

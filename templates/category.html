@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name | capitalize }}</title>
+</head>
+<body>
+    <h1>{{ name | capitalize }}</h1>
+    <ul>
+        {% for item in items %}
+        <li>{{ item.name }}: {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

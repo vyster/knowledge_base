@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Knowledge Base</h1>
+    <ul>
+        {% for category, items in data.items() %}
+        <li>
+            <a href="/category/{{ category }}">{{ category | capitalize }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
